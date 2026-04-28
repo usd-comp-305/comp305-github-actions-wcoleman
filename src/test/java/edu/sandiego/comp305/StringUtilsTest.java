@@ -50,6 +50,7 @@ class StringUtilsTest {
 
     @Test
     void reverseStringContainsSpace() {
-
+        String reversed = StringUtils.reverseString("jake coleman");
+        assertEquals("nameloc ekaj", reversed);
     }
 }
