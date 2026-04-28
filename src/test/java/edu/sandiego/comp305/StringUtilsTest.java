@@ -44,7 +44,8 @@ class StringUtilsTest {
 
     @Test
     void reverseStringNullReturnsNull() {
-
+        String reversed = StringUtils.reverseString(null);
+        assertNull(reversed);
     }
 
     @Test
