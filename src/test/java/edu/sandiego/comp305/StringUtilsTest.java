@@ -8,7 +8,8 @@ class StringUtilsTest {
 
     @Test
     void reverseStringEvenLetters() {
-
+        String reversed = StringUtils.reverseString("jake");
+        assertEquals("ekaj", reversed);
     }
 
     @Test
