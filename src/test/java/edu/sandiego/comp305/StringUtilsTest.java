@@ -20,7 +20,8 @@ class StringUtilsTest {
 
     @Test
     void reverseStringNoLetters() {
-
+        String reversed = StringUtils.reverseString("");
+        assertEquals("", reversed);
     }
 
     @Test
