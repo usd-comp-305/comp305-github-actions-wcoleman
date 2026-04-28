@@ -26,7 +26,8 @@ class StringUtilsTest {
 
     @Test
     void reverseStringCapitalLetter() {
-
+        String reversed = StringUtils.reverseString("jAke");
+        assertEquals("ekAj", reversed);
     }
 
     @Test
