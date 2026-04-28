@@ -32,7 +32,8 @@ class StringUtilsTest {
 
     @Test
     void reverseStringWithNumber() {
-
+        String reversed = StringUtils.reverseString("jake20");
+        assertEquals("02ekaj", reversed);
     }
 
     @Test
