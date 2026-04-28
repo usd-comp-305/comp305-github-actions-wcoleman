@@ -14,7 +14,8 @@ class StringUtilsTest {
 
     @Test
     void reverseStringOddLetters() {
-
+        String reversed = StringUtils.reverseString("hello");
+        assertEquals("olleh", reversed);
     }
 
     @Test
