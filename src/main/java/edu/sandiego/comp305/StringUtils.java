@@ -1,7 +1,9 @@
 package edu.sandiego.comp305;
 
 public class StringUtils {
-    public static String reverseString(String string){
+    private StringUtils() {}
+
+    public static String reverseString(final String string){
         if (string == null) {
             return null;
         }
@@ -11,5 +13,10 @@ public class StringUtils {
             reversedString = string.charAt(i) + reversedString;
         }
         return reversedString;
+    }
+
+    public static void main(final String[] args) {
+        final String teststring = "hello";
+        System.out.println(reverseString(teststring));
     }
 }

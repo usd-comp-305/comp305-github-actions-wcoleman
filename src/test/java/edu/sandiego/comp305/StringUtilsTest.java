@@ -8,49 +8,49 @@ class StringUtilsTest {
 
     @Test
     void reverseStringEvenLetters() {
-        String reversed = StringUtils.reverseString("jake");
+        final String reversed = StringUtils.reverseString("jake");
         assertEquals("ekaj", reversed);
     }
 
     @Test
     void reverseStringOddLetters() {
-        String reversed = StringUtils.reverseString("hello");
+        final String reversed = StringUtils.reverseString("hello");
         assertEquals("olleh", reversed);
     }
 
     @Test
     void reverseStringNoLetters() {
-        String reversed = StringUtils.reverseString("");
+        final String reversed = StringUtils.reverseString("");
         assertEquals("", reversed);
     }
 
     @Test
     void reverseStringCapitalLetter() {
-        String reversed = StringUtils.reverseString("jAke");
+        final String reversed = StringUtils.reverseString("jAke");
         assertEquals("ekAj", reversed);
     }
 
     @Test
     void reverseStringWithNumber() {
-        String reversed = StringUtils.reverseString("jake20");
+        final String reversed = StringUtils.reverseString("jake20");
         assertEquals("02ekaj", reversed);
     }
 
     @Test
     void reverseStringOneLetter() {
-        String reversed = StringUtils.reverseString("j");
+        final String reversed = StringUtils.reverseString("j");
         assertEquals("j", reversed);
     }
 
     @Test
     void reverseStringNullReturnsNull() {
-        String reversed = StringUtils.reverseString(null);
+        final String reversed = StringUtils.reverseString(null);
         assertNull(reversed);
     }
 
     @Test
     void reverseStringContainsSpace() {
-        String reversed = StringUtils.reverseString("jake coleman");
+        final String reversed = StringUtils.reverseString("jake coleman");
         assertEquals("nameloc ekaj", reversed);
     }
 }
