@@ -38,7 +38,8 @@ class StringUtilsTest {
 
     @Test
     void reverseStringOneLetter() {
-
+        String reversed = StringUtils.reverseString("j");
+        assertEquals("j", reversed);
     }
 
     @Test
